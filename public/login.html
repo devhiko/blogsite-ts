@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="./assets/paper_96x96.webp">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  <meta name="theme-color" content="#9cb7f0">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/pages/login.css">
+  <link rel="manifest" href="./manifest.json">
+
+
+</head>
+
+<body>
+  <header>
+    <a href="/public/index.html">
+      <p>Paper Blog</p>
+    </a>
+    <nav class="header-nav-link">
+      <ul>
+        <li class="nav-link"><a href="/public/about.html">About</a></li>
+        <li class="nav-link"><a href="/public/contact.html">Contact</a></li>
+        <li class="nav-link"><a href="/public/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="login">
+      <h3>Login</h3>
+      <form class="login-form">
+        <label>Email: </label> <br>
+        <input type="email" placeholder="like abc@somemail.com" required> <br>
+        <label>Password: </label> <br>
+        <input type="password" placeholder="like 12345" required> <br>
+        <button type="submit">Login</button>
+        <span>Don't have an account <a href="/public/signup.html">Signup</a></span>
+      </form>
+    </div>
+  </main>
+  <footer>Tasarım by filan</footer>
+  <script src="./script.js" defer></script>
+</body>
+
+</html>

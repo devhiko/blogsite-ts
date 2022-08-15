@@ -1,0 +1,62 @@
+@import '../globals/variables';
+
+@import '../components/header';
+@import '../components/main';
+@import '../components/footer';
+
+.add-blog {
+  width: 560px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px auto;
+  background: none;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    border: 1px solid $main-color;
+  }
+
+  .add-blog-header {
+    width: 80px;
+    margin: 0px;
+    padding: 10px 0px;
+    font-weight: bold;
+  }
+
+  input {
+    margin: 10px;
+    margin-left: 25px;
+    padding: 10px;
+    width: 410px;
+    font-size: 16px;
+    box-shadow: $box-shadow;
+  }
+
+  .content {
+    margin: 10px auto;
+    float: left;
+  }
+
+  textarea {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: $box-shadow;
+  }
+
+  select {
+    padding: 5px 10px;
+  }
+
+  .add-blog-btn {
+    font-size: 16px;
+    margin: auto 20px;
+    padding: 10px 20px;
+    float: right;
+    border: none;
+    background: rgb(236, 234, 234);
+
+    &:hover {
+      background: $main-color;
+    }
+  }
+}

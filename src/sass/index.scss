@@ -1,0 +1,82 @@
+// GLOBALS
+@import 'globals/variables';
+@import 'globals/reset';
+
+// COMPONENTS
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';
+
+// OTHER PAGES
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/login';
+@import 'pages/signup';
+@import 'pages/addblog';
+
+// RESPONSIVE MEDIA QUERIES
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+
+    p {
+      margin: 0;
+      width: 5%;
+    }
+
+    .search-blog {
+      margin: 0px auto;
+      padding: 0px 10px;
+      width: auto;
+
+      .search-form {
+        width: 100%;
+
+        #search-topic {
+          width: auto;
+        }
+
+        .search-button {
+          padding: 5px 10px;
+          background: none;
+
+          &:hover {
+            background: $main-color;
+          }
+        }
+      }
+
+      .search-results {
+        margin: 5px auto;
+        display: none;
+        padding: 10px;
+        width: 45%;
+        height: 200px;
+        overflow: hidden;
+        background: #ece9e9;
+        box-shadow: $box-shadow;
+        position: absolute;
+      }
+    }
+
+    .header-nav-link {
+      height: 230px;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // FOR DEMO UNTIL NOW. AND AFTER IS SAME WITH UP.
+}

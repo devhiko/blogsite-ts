@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Blog</title>
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="./assets/paper_96x96.webp">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  <meta name="theme-color" content="#9cb7f0">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/pages/addblog.css">
+  <link rel="manifest" href="./manifest.json">
+
+</head>
+
+<body>
+  <header>
+    <a href="/public/index.html">
+      <p>Paper Blog</p>
+    </a>
+    <div class="search-blog">
+      <form class="search-form" name="search">
+        <input type="search" id="search-topic" placeholder="Search a blog">
+        <button class="search-button">Search</button>
+      </form>
+      <div class="search-results">
+        <h4>Search Results</h4>
+        <ul class="search-results-ul">
+          <!-- render search results from fetch -->
+        </ul>
+      </div>
+    </div>
+    <nav class="header-nav-link">
+      <ul>
+        <li class="nav-link"><a href="/public/about.html">About</a></li>
+        <li class="nav-link"><a href="/public/contact.html">Contact</a></li>
+        <li class="nav-link"><a href="/public/login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="add-blog">
+      <p class="add-blog-header">Add Blog</p>
+      <form class="add-blog-form" id="add-blog-form">
+        <label for="topic" class="topic">Blog Topic: </label>
+        <input type="text" name="topic" id="blog-topic" placeholder="Some Topic" required> <br>
+        <label for="content" class="content">Blog Content: </label>
+        <textarea name="" id="blog-content" cols="40" rows="10" placeholder="Some Content" required></textarea> <br>
+        <label for="category">Blog category: </label>
+        <select name="category" id="blog-category">
+          <optgroup>
+            <option value="movie">Movie</option>
+            <option value="science">Science</option>
+            <option value="art">Art</option>
+          </optgroup>
+        </select>
+        <button class="add-blog-btn" id="add-blog-btn" type="submit">Add Blog</button>
+      </form>
+    </div>
+  </main>
+  <footer>Tasarım by filan</footer>
+  <script type="module" src="./scripts/addBlog.js" defer></script>
+</body>
+
+</html>

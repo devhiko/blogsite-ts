@@ -1,0 +1,1 @@
+# ts ile bir blog uygulaması (plain ts)

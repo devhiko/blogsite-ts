@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+}
+
+main,
+.main-blog,
+.blog,
+.top-blogs,
+.top-blog-topic,
+.search-form,
+#search-topic,
+.search-results,
+.add-blog,
+.add-blog input,
+.add-blog textarea,
+.login,
+.signup,
+.about,
+.contact {
+  border: none;
+}
+
+header {
+  padding: 5px 10px;
+  width: 100%;
+  height: 80px;
+  box-shadow: 2px 3px 3px lightgray;
+}
+header p {
+  float: left;
+  width: 100px;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 16px;
+}
+header .header-nav-link {
+  height: 50px;
+}
+header .header-nav-link ul {
+  margin: 0px 10px;
+  padding: 15px;
+  float: right;
+}
+header .header-nav-link li {
+  display: inline-block;
+  margin: 0px;
+  padding: 10px;
+}
+header .header-nav-link a:hover {
+  color: lightgreen;
+}
+header .search-blog {
+  margin: 0;
+  margin-right: 160px;
+  float: right;
+  padding: 10px;
+  width: 30%;
+}
+header .search-blog .search-form {
+  padding: 5px;
+  width: 570px;
+  height: auto;
+}
+header .search-blog .search-form #search-topic {
+  margin-right: 10px;
+  width: 436px;
+  padding: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
+header .search-blog .search-form #search-topic:focus {
+  border: 1px solid green;
+}
+header .search-blog .search-form .search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+}
+header .search-blog .search-form .search-button:hover {
+  background: lightgreen;
+}
+header .search-blog .search-results {
+  display: none;
+  margin: 0px 0px;
+  padding: 10px;
+  width: 550px;
+  height: 200px;
+  overflow: hidden;
+  background: #dfdcdc;
+  box-shadow: 2px 3px 3px lightgray;
+  position: absolute;
+}
+header .search-blog .search-results h4 {
+  margin: 0;
+}
+header .search-blog .search-results .search-results-ul {
+  margin: 5px;
+  padding: 0;
+}
+header .search-blog .search-results .search-results-ul .result {
+  margin: 0;
+  padding: 5px;
+}
+
+main {
+  width: 100%;
+  height: 1170px;
+}
+main .main-blog {
+  margin: 10px;
+  width: 755px;
+  height: 1154px;
+  float: left;
+  overflow: auto;
+}
+main .main-blog .main-header {
+  width: 80px;
+  margin: 0px 10px;
+  padding: 5px 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+main .main-blog select {
+  padding: 5px;
+  border: none;
+  background: #f6f6f6;
+}
+main .main-blog .blogs-container {
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+}
+main .main-blog .blog {
+  margin-bottom: 20px;
+  width: 700px;
+  height: auto;
+  padding: 20px 10px;
+  text-align: justify;
+  box-shadow: 2px 3px 2px lightgray;
+}
+main .main-blog .blog:hover {
+  border: 1px solid lightgreen;
+}
+main .main-blog .blog .blog-header {
+  font-weight: bold;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+main .main-blog .blog .blog-content {
+  height: auto;
+}
+main .main-blog .blog .blog-content-text {
+  padding: 10px 10px;
+}
+main .main-blog .blog .read-blog-btn,
+main .main-blog .blog .like-blog-btn {
+  margin: 0px 5px;
+  border: 1px solid lightgray;
+  background: none;
+  padding: 10px;
+}
+main .main-blog .blog .read-blog-btn:hover,
+main .main-blog .blog .like-blog-btn:hover {
+  background: lightgreen;
+}
+main .main-navigation {
+  width: 570px;
+  height: inherit;
+  float: right;
+}
+main .main-navigation .top-blogs {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  width: 560px;
+  height: 350px;
+  overflow: auto;
+  box-shadow: 2px 3px 3px lightgray;
+}
+main .main-navigation .top-blogs .top-blog-header {
+  margin: auto 10px;
+  font-weight: bold;
+}
+main .main-navigation .top-blogs .top-blogs-ul {
+  margin: 10px;
+  padding: 0;
+}
+main .main-navigation .top-blogs .top-blogs-ul .top-blog {
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
+main .main-navigation .top-blogs .top-blogs-ul .top-blog:hover {
+  border: 1px solid lightgreen;
+}
+main .main-navigation .top-blogs .top-blogs-ul .top-blog .top-blog-topic {
+  margin: 10px;
+  display: block;
+  padding: 5px;
+}
+main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+.login,
+.signup {
+  margin: 5% auto;
+  width: 35%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
+.login:hover,
+.signup:hover {
+  border: 1px solid lightgreen;
+}
+.login h3,
+.signup h3 {
+  margin: 10px;
+  text-align: center;
+}
+.login .login-form,
+.login .signup-form,
+.signup .login-form,
+.signup .signup-form {
+  margin: 10px 30px;
+  padding: 10px;
+}
+.login .login-form label,
+.login .signup-form label,
+.signup .login-form label,
+.signup .signup-form label {
+  margin: auto;
+}
+.login .login-form input,
+.login .signup-form input,
+.signup .login-form input,
+.signup .signup-form input {
+  border: none;
+  font-size: 16px;
+  margin: 10px auto;
+  width: 95%;
+  padding: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
+.login .login-form input:focus,
+.login .signup-form input:focus,
+.signup .login-form input:focus,
+.signup .signup-form input:focus {
+  border: 1px solid lightgreen;
+}
+.login .login-form button,
+.login .signup-form button,
+.signup .login-form button,
+.signup .signup-form button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  margin: 10px auto;
+  margin-right: 5px;
+  width: 30%;
+  padding: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+}
+.login .login-form button:hover,
+.login .signup-form button:hover,
+.signup .login-form button:hover,
+.signup .signup-form button:hover {
+  background-color: lightgreen;
+}
+.login .login-form a,
+.login .signup-form a,
+.signup .login-form a,
+.signup .signup-form a {
+  font-weight: bold;
+}
+.login .login-form a:hover,
+.login .signup-form a:hover,
+.signup .login-form a:hover,
+.signup .signup-form a:hover {
+  color: green;
+}

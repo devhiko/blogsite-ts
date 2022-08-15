@@ -1,0 +1,32 @@
+{
+  "short-name": "Paper Blog",
+  "name": "Paper Blog: A blank paper for blogging",
+  "start_url": "/public/",
+  "icons": [
+    {
+      "src": "./assets/paper_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/paper_128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./assets/paper_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#e8eaed",
+  "display_override": [
+    "window-control-overlay",
+    "minimal-ui"
+  ],
+  "display": "standalone",
+  "theme_color": "#9cb7f0",
+  "orientation": "portrait-primary",
+  "description": "A blank paper for blogging"
+}

@@ -1,0 +1,69 @@
+@import '../globals/variables';
+
+@import '../components/header';
+@import '../components/main';
+@import '../components/footer';
+
+.login,
+.signup {
+  margin: 5% auto;
+  width: 35%;
+  height: auto;
+  padding: 10px;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    border: 1px solid $main-color;
+  }
+
+  h3 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .login-form,
+  .signup-form {
+    margin: 10px 30px;
+    padding: 10px;
+
+    label {
+      margin: auto;
+    }
+
+    input {
+      border: none;
+      font-size: 16px;
+      margin: 10px auto;
+      width: 95%;
+      padding: 10px;
+      box-shadow: $box-shadow;
+
+      &:focus {
+        border: 1px solid $main-color;
+      }
+    }
+
+    button {
+      border: none;
+      background: none;
+      font-size: 16px;
+      margin: 10px auto;
+      margin-right: 5px;
+      width: 30%;
+      padding: 10px;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        background-color: $main-color;
+      }
+    }
+
+    a {
+      font-weight: bold;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}

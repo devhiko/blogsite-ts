@@ -1,0 +1,9 @@
+@import '../components/header';
+@import '../components/main';
+@import '../components/footer';
+
+.about,
+.contact {
+  margin: 10%;
+  padding: 10px;
+}
